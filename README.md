@@ -8,3 +8,4 @@ Engineering notes on smart home architecture, network reliability, Home Assistan
 
 - [Why Smart Homes Fail](./why-smart-homes-fail.md)
 - [Local vs Cloud Smart Homes](./local-vs-cloud.md)
+- [Stable Network Design](./stable-network-design.md)
