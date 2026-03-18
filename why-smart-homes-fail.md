@@ -27,6 +27,6 @@ We treat the home as a system, not a collection of products.
 - reduced vendor lock-in
 
 ---
-Nestology  
+Nestology pro  
 Central Pennsylvania  
 Vendor-independent smart home engineering
