@@ -1,11 +1,23 @@
-# Nestology Engineering
+# Nestology
 
-Engineering notes on smart home architecture, network reliability, Home Assistant, and local-first system design for real residential projects.
+Vendor-independent smart home engineering.
 
----
+We design and build stable, local-first home systems for complex residential environments.
 
-## Notes
+## Focus Areas
+
+- Smart home architecture
+- Network design & segmentation
+- Home Assistant systems
+- Local-first automation
+- System reliability & failure analysis
+
+## Engineering Notes
 
 - [Why Smart Homes Fail](./why-smart-homes-fail.md)
 - [Local vs Cloud Smart Homes](./local-vs-cloud.md)
 - [Stable Network Design](./stable-network-design.md)
+
+## Website
+
+https://www.nestology.pro
