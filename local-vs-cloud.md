@@ -183,5 +183,5 @@ A real system is:
 If you're designing or inheriting a system with unclear reliability —  
 we engineer stable, vendor-independent smart home systems for real residential environments.
 
-Nestology  
+Nestology.pro
 Central Pennsylvania  
