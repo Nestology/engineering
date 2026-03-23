@@ -1,0 +1,163 @@
+# Why Wi-Fi Is Not Enough for Smart Homes
+
+Wi-Fi is convenient.
+
+It is not a reliable foundation for a complex system.
+
+---
+
+## Context
+
+Most smart homes rely heavily on Wi-Fi:
+
+- devices connect wirelessly
+- mesh systems expand coverage
+- new devices are added continuously
+
+This works — until the system grows.
+
+---
+
+## What Usually Happens
+
+Typical belief:
+
+“Strong Wi-Fi = stable system”
+
+So the solution becomes:
+
+- add more access points
+- upgrade routers
+- increase coverage
+
+But problems persist.
+
+---
+
+## Why This Fails
+
+### 1. Wi-Fi Is Not Deterministic
+
+Wireless communication depends on:
+
+- signal quality
+- interference
+- device behavior
+
+This introduces variability.
+
+---
+
+### 2. Interference Is Unavoidable
+
+Sources include:
+
+- neighboring networks
+- building materials
+- device density
+
+Even well-designed systems are affected.
+
+---
+
+### 3. Roaming Issues
+
+Devices may:
+
+- stick to weak access points
+- switch unpredictably
+- disconnect during transitions
+
+Automation depending on these devices becomes unreliable.
+
+---
+
+### 4. Limited Bandwidth Per Environment
+
+Wi-Fi is shared medium.
+
+More devices = more contention.
+
+This affects:
+
+- latency
+- reliability
+- throughput
+
+---
+
+## What Works Better
+
+Wi-Fi should support the system — not carry it.
+
+---
+
+### 1. Wired Backbone
+
+Critical components should be wired:
+
+- access points
+- cameras
+- media systems
+- controllers
+
+This reduces load and increases stability.
+
+---
+
+### 2. Designed Wi-Fi Coverage
+
+Not maximum coverage, but:
+
+- controlled overlap
+- proper channel planning
+- tuned transmit power
+
+---
+
+### 3. Device Placement Strategy
+
+Not all devices belong on Wi-Fi.
+
+Whenever possible:
+
+- use wired connections  
+- use dedicated protocols (e.g., Zigbee, Z-Wave)  
+
+---
+
+## Our Approach
+
+We treat Wi-Fi as a mobility layer.
+
+The system foundation remains:
+
+- wired
+- structured
+- predictable
+
+---
+
+## Key Principles
+
+- Wi-Fi for convenience, not infrastructure  
+- wire critical paths  
+- reduce wireless dependency  
+- design, not guess  
+
+---
+
+## Key Takeaways
+
+- Strong signal does not guarantee stability  
+- Wi-Fi alone cannot support a complex system reliably  
+- Infrastructure decisions define system behavior  
+- Stability requires reducing wireless dependency  
+
+---
+
+If your system behaves inconsistently —  
+Wi-Fi is often part of the problem, not the solution.
+
+Nestology  
+Central Pennsylvania  
