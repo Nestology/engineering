@@ -13,7 +13,6 @@ We design and build stable, local-first home systems for complex residential env
 - System reliability & failure analysis
 
 
-
 ## Website
 
 https://www.nestology.pro
