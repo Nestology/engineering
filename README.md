@@ -12,11 +12,7 @@ We design and build stable, local-first home systems for complex residential env
 - Local-first automation
 - System reliability & failure analysis
 
-## Engineering Notes
 
-- [Why Smart Homes Fail](./why-smart-homes-fail.md)
-- [Local vs Cloud Smart Homes](./local-vs-cloud.md)
-- [Stable Network Design](./stable-network-design.md)
 
 ## Website
 
