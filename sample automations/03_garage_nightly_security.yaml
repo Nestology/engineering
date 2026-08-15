@@ -1,0 +1,19 @@
+- id: automation_id_garage_nightly_security
+  alias: Garage Nightly Security
+
+  triggers:
+    - trigger: time
+      at: "23:00:00"
+
+  actions:
+    - action: cover.close_cover
+      target:
+        entity_id:
+          - cover.garage_door_1
+          - cover.garage_door_2
+
+    - action: lock.lock
+      target:
+        entity_id: lock.entry_door
+
+  mode: single

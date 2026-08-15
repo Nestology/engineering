@@ -1,0 +1,33 @@
+- id: automation_id_weather_irrigation
+  alias: Weather Based Irrigation
+
+  triggers:
+    - trigger: numeric_state
+      entity_id: sensor.outdoor_humidity
+      below: 50
+
+  conditions:
+    - condition: numeric_state
+      entity_id: sensor.outdoor_temperature
+      above: 25
+
+  actions:
+    - action: switch.turn_on
+      target:
+        entity_id:
+          - switch.irrigation_zone_1
+          - switch.irrigation_zone_2
+          - switch.irrigation_zone_3
+          - switch.irrigation_zone_4
+
+    - delay: "00:15:00"
+
+    - action: switch.turn_off
+      target:
+        entity_id:
+          - switch.irrigation_zone_1
+          - switch.irrigation_zone_2
+          - switch.irrigation_zone_3
+          - switch.irrigation_zone_4
+
+  mode: single

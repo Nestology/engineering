@@ -1,0 +1,31 @@
+- id: automation_id_light_alarm
+  alias: Light Alarm
+
+  triggers:
+    - trigger: time
+      at: "20:36:00"
+
+  conditions:
+    - condition: time
+      weekday:
+        - mon
+        - tue
+        - wed
+        - thu
+        - fri
+
+  actions:
+    - action: light.turn_on
+      target:
+        entity_id: light.alarm_light
+      data:
+        brightness_pct: 2
+
+    - action: light.turn_on
+      target:
+        entity_id: light.alarm_light
+      data:
+        brightness_pct: 51
+        transition: 288
+
+  mode: single

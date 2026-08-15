@@ -1,0 +1,35 @@
+- id: automation_id_backyard_lighting
+  alias: Backyard Lighting Schedule
+
+  triggers:
+    - trigger: sun
+      event: sunset
+      id: turn_on
+
+    - trigger: time
+      at: "22:00:00"
+      id: turn_off
+
+  actions:
+    - choose:
+        - conditions:
+            - condition: trigger
+              id: turn_on
+            - condition: time
+              weekday:
+                - sat
+                - sun
+          sequence:
+            - action: switch.turn_on
+              target:
+                entity_id: switch.backyard_lights
+
+        - conditions:
+            - condition: trigger
+              id: turn_off
+          sequence:
+            - action: switch.turn_off
+              target:
+                entity_id: switch.backyard_lights
+
+  mode: single

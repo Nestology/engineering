@@ -1,0 +1,43 @@
+- id: automation_id_garage_access_snapshot
+  alias: Garage Access Snapshot
+
+  triggers:
+    - trigger: state
+      entity_id:
+        - cover.garage_door_1
+        - cover.garage_door_2
+      from: "closed"
+      to: "open"
+
+  variables:
+    snapshot_time: "{{ now().strftime('%Y%m%d_%H%M%S') }}"
+    snapshot_filename: "garage_{{ snapshot_time }}.jpg"
+    snapshot_path: "/config/www/snapshots/{{ snapshot_filename }}"
+    snapshot_url: "/local/snapshots/{{ snapshot_filename }}"
+
+  actions:
+    - delay: "00:00:03"
+
+    - action: camera.snapshot
+      target:
+        entity_id: camera.garage
+      data:
+        filename: "{{ snapshot_path }}"
+
+    - action: notify.persistent_notification
+      data:
+        title: Garage Opened
+        message: >
+          Garage accessed at {{ now().strftime('%m/%d %H:%M:%S') }}.
+
+          ![]({{ snapshot_url }})
+
+    - action: system_log.write
+      data:
+        level: info
+        message: >
+          Garage accessed at {{ now().strftime('%Y-%m-%d %H:%M:%S') }}.
+          Snapshot: {{ snapshot_url }}
+
+  mode: parallel
+  max: 5

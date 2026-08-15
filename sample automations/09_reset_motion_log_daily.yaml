@@ -1,0 +1,15 @@
+- id: automation_id_reset_motion_log
+  alias: Reset Motion Log Daily
+
+  triggers:
+    - trigger: time
+      at: "00:00:00"
+
+  actions:
+    - action: input_text.set_value
+      target:
+        entity_id: input_text.motion_log
+      data:
+        value: "**Motion Log for Today:**"
+
+  mode: single

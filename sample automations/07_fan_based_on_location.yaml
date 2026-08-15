@@ -1,0 +1,15 @@
+- id: automation_id_fan_location
+  alias: Turn Off Fan When Person Leaves Home
+
+  triggers:
+    - trigger: zone
+      entity_id: person.household_member
+      zone: zone.home
+      event: leave
+
+  actions:
+    - action: fan.turn_off
+      target:
+        entity_id: fan.room_fan
+
+  mode: single

@@ -1,0 +1,72 @@
+- id: automation_id_front_door_motion
+  alias: Front Door Motion
+
+  triggers:
+    - trigger: state
+      entity_id: binary_sensor.person_sensor
+      from: "off"
+      to: "on"
+
+  variables:
+    snapshot_time: "{{ now().strftime('%Y%m%d_%H%M%S') }}"
+    snapshot_filename: "motion_{{ snapshot_time }}.jpg"
+    snapshot_path: "/config/www/snapshots/{{ snapshot_filename }}"
+    snapshot_url: "/local/snapshots/{{ snapshot_filename }}"
+
+  actions:
+    - delay: "00:00:01"
+
+    - action: camera.snapshot
+      target:
+        entity_id: camera.entry
+      data:
+        filename: "{{ snapshot_path }}"
+
+    - action: notify.notify
+      continue_on_error: true
+      data:
+        title: Front Door Motion Detected
+        message: "{{ now().strftime('%H:%M') }}"
+        data:
+          image: "{{ snapshot_url }}"
+          clickAction: /dashboard-cameras/
+          url: /dashboard-cameras/
+
+    - action: system_log.write
+      data:
+        level: info
+        message: >
+          Motion detected at {{ now().strftime('%Y-%m-%d %H:%M:%S') }}.
+          Snapshot: {{ snapshot_url }}
+
+    - if:
+        - condition: time
+          after: "22:00:00"
+          before: "05:00:00"
+        - condition: sun
+          after: sunset
+          before: sunrise
+      then:
+        - action: light.turn_on
+          target:
+            entity_id:
+              - light.exterior_light_1
+              - light.exterior_light_2
+
+        - wait_for_trigger:
+            - trigger: state
+              entity_id: binary_sensor.motion_sensor
+              from: "on"
+              to: "off"
+          timeout: "00:10:00"
+          continue_on_timeout: true
+
+        - delay: "00:02:00"
+
+        - action: light.turn_off
+          target:
+            entity_id:
+              - light.exterior_light_1
+              - light.exterior_light_2
+
+  mode: restart

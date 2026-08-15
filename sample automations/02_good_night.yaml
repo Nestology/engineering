@@ -1,0 +1,31 @@
+- id: automation_id_good_night
+  alias: Good Night
+
+  triggers:
+    - trigger: state
+      entity_id: input_boolean.daytime
+      from: "on"
+      to: "off"
+
+  actions:
+    - action: cover.close_cover
+      target:
+        entity_id:
+          - cover.main_curtains
+          - cover.shade_1
+          - cover.shade_2
+          - cover.shade_3
+          - cover.shade_4
+          - cover.shade_5
+
+    - action: cover.close_cover
+      target:
+        entity_id:
+          - cover.garage_door_1
+          - cover.garage_door_2
+
+    - action: light.turn_on
+      target:
+        entity_id: light.night_light
+
+  mode: single

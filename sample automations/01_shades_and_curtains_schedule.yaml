@@ -1,0 +1,68 @@
+- id: automation_id_shades_schedule
+  alias: Shades and Curtains Schedule
+
+  triggers:
+    - trigger: sun
+      event: sunrise
+      id: sunrise
+
+    - trigger: time
+      at: "09:00:00"
+      id: weekend_morning
+
+    - trigger: sun
+      event: sunset
+      id: sunset
+
+  actions:
+    - choose:
+        - conditions:
+            - condition: trigger
+              id: sunrise
+            - condition: state
+              entity_id: binary_sensor.workday
+              state: "on"
+          sequence:
+            - action: cover.open_cover
+              target:
+                entity_id:
+                  - cover.main_curtains
+                  - cover.shade_1
+                  - cover.shade_2
+                  - cover.shade_3
+                  - cover.shade_4
+                  - cover.shade_5
+
+        - conditions:
+            - condition: trigger
+              id: weekend_morning
+            - condition: state
+              entity_id: binary_sensor.workday
+              state: "off"
+          sequence:
+            - action: cover.open_cover
+              target:
+                entity_id:
+                  - cover.main_curtains
+                  - cover.shade_1
+                  - cover.shade_2
+                  - cover.shade_3
+                  - cover.shade_4
+                  - cover.shade_5
+
+        - conditions:
+            - condition: trigger
+              id: sunset
+          sequence:
+            - action: cover.close_cover
+              target:
+                entity_id:
+                  - cover.main_curtains
+                  - cover.shade_1
+                  - cover.shade_2
+                  - cover.shade_3
+                  - cover.shade_4
+                  - cover.shade_5
+                  - cover.window_cover
+
+  mode: single
