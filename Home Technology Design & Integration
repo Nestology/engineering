@@ -1,0 +1,309 @@
+# Home Technology Design & Integration
+
+## The modern home has a technology gap
+
+A modern home is no longer defined only by architecture, structure, electrical, plumbing, and HVAC.
+
+It may also include:
+
+- lighting control
+- motorized shades
+- whole-home audio
+- network infrastructure
+- cameras and security
+- access control
+- climate systems
+- energy management
+- EV charging
+- automation
+
+Each system may have its own contractor, vendor, or manufacturer.
+
+The electrician owns the electrical scope.  
+The HVAC contractor owns heating and cooling.  
+The AV team owns entertainment.  
+The security provider owns cameras and alarms.  
+The shade specialist owns window treatments.
+
+But the homeowner is not building a collection of separate systems.
+
+**They are building one home.**
+
+The missing layer is often not another trade.
+
+It is ownership of the technology architecture that exists **between the trades**.
+
+---
+
+# Technology decisions are construction decisions
+
+Many decisions that look like “smart-home decisions” are actually construction decisions.
+
+Examples:
+
+- power locations
+- structured wiring
+- Cat6 / PoE
+- conduit
+- network equipment locations
+- shade power
+- recessed shade pockets
+- speaker wiring
+- camera locations
+- access points
+- control locations
+- sensor locations
+- future pathways
+
+Once walls and ceilings are closed, the cost and complexity of changing these decisions rises sharply.
+
+A device can often be replaced later.
+
+Infrastructure is much harder to replace.
+
+> **Choose devices later. Preserve the infrastructure now.**
+
+---
+
+# Build once, not twice
+
+A new home should not need a technology retrofit on move-in day.
+
+The homeowner should not have to:
+
+1. pay for a conventional system during construction;
+2. remove brand-new hardware after closing;
+3. open finished walls;
+4. run new wiring;
+5. patch drywall;
+6. repaint;
+7. pay again for the system they actually wanted.
+
+Good technology planning moves these decisions earlier.
+
+### Before construction
+Define the requirements.
+
+### During rough-in
+Build the infrastructure.
+
+### After construction
+Install, integrate, and commission the systems.
+
+The technology may be the same.
+
+**The cost of adding it later is not.**
+
+---
+
+# Plan → Coordinate → Integrate
+
+Our model is simple.
+
+## 1. Plan
+
+Translate homeowner expectations into technical requirements.
+
+Examples:
+
+- what the family wants the home to do;
+- what must be wired;
+- what should remain local;
+- which systems need to interact;
+- what should be prepared for future use.
+
+## 2. Coordinate
+
+Work with the existing project team.
+
+Nestology does not replace the:
+
+- general contractor;
+- electrician;
+- HVAC contractor;
+- plumber;
+- architect;
+- interior designer;
+- shade installer;
+- AV contractor;
+- security contractor.
+
+We identify the dependencies between their scopes.
+
+## 3. Integrate
+
+Bring the completed systems together into one coherent environment.
+
+The general contractor remains responsible for construction coordination.
+
+**The technology partner owns technology requirements and integration.**
+
+---
+
+# Architecture first
+
+Many home-automation projects begin with a platform:
+
+> “This is a Control4 house.”
+
+> “This is a Crestron project.”
+
+> “This is an Alexa home.”
+
+We prefer a different sequence.
+
+## Requirements first  
+## Architecture second  
+## Products and platforms third
+
+A proprietary platform may be the correct solution.
+
+It should not be the question the project starts with.
+
+We first ask:
+
+- How does the homeowner want to live?
+- What should happen automatically?
+- What infrastructure does the house need?
+- What happens when the internet is unavailable?
+- What data leaves the home?
+- Who owns the accounts?
+- Who can service the system?
+- What happens if a manufacturer changes direction?
+- Can one subsystem be replaced without rebuilding everything else?
+
+Only then do we select the technology.
+
+---
+
+# Platform-centric vs. architecture-first
+
+| Platform-centric approach | Architecture-first approach |
+|---|---|
+| Starts with a proprietary ecosystem | Starts with the homeowner, house, and build plan |
+| Fits the project into platform capabilities | Defines requirements first, then selects systems |
+| Owns the automation system | Owns dependencies between technology scopes |
+| Future changes follow the platform and dealer lifecycle | Infrastructure preserves options and reduces retrofit risk |
+| One ecosystem becomes the center of the home | The home remains the center; platforms are selected where appropriate |
+
+The objective is not ideological openness.
+
+The objective is **lifecycle resilience**.
+
+---
+
+# The homeowner should own the home
+
+That includes the technology.
+
+Where practical, the homeowner should receive:
+
+- administrative credentials;
+- account ownership;
+- system documentation;
+- network documentation;
+- device inventories;
+- integration notes;
+- service information;
+- backup and recovery information.
+
+A future homeowner should not inherit an expensive house and then have to reverse-engineer:
+- who controls the system;
+- which dealer has access;
+- what depends on the cloud;
+- what requires a subscription;
+- what can be changed independently.
+
+**The house should outlive today's devices, platforms, and service relationships.**
+
+---
+
+# Privacy is part of the architecture
+
+Connected homes can collect sensitive information:
+- camera footage
+- occupancy patterns
+- door activity
+- device usage
+- environmental data
+- access credentials
+- remote-control history
+
+Privacy should therefore not be treated as a checkbox added after installation.
+
+It can affect the architecture itself.
+
+Depending on the project, that may include:
+- local control;
+- network segmentation;
+- controlled remote access;
+- limited cloud dependency;
+- clear account ownership;
+- documented service access;
+- security-aware device selection.
+
+> **A modern home should not become less private simply because it becomes more capable.**
+
+---
+
+# A better-designed home gives attention back
+
+The goal of home technology is not to give people more technology to manage.
+It is the opposite.
+
+A well-designed home should reduce:
+- repetitive decisions;
+- unnecessary notifications;
+- multiple apps;
+- disconnected controls;
+- battery maintenance;
+- Wi-Fi troubleshooting;
+- manual routines.
+
+Lighting, climate, shades, security, energy, audio, and connectivity should behave as one environment.
+
+> **Your home should not take your attention.**
+
+## Less home management. More life.
+
+---
+
+# Why this belongs in the design-build process
+
+CEDIA, the Association for Smart Home Professionals, created a dedicated Design & Build Outreach initiative in 2026 to strengthen collaboration between technology professionals, builders, architects, and interior designers. :contentReference[oaicite:0]{index=0}
+
+The direction is clear:
+Technology is increasingly part of residential design, not simply something added after construction.
+
+That matches what we see in real projects.
+
+When technology planning happens early:
+- the builder keeps control of the project;
+- trades receive clearer requirements;
+- late-stage changes decrease;
+- retrofit risk decreases;
+- the homeowner gets a more coherent home;
+- future options remain open.
+
+---
+
+# Core principles
+
+1. **Home first, platform second.**
+2. **Requirements before products.**
+3. **Plan infrastructure before drywall.**
+4. **Work with existing trades, not against them.**
+5. **Avoid unnecessary lock-in.**
+6. **Design for serviceability and future change.**
+7. **Treat privacy and security as architectural requirements.**
+8. **Give the homeowner ownership of the technology they paid for.**
+9. **Build once, not twice.**
+10. **Less home management. More life.**
+
+---
+
+## About Nestology.PRO
+
+Nestology.PRO is a Home Technology Design & Integration company serving Central Pennsylvania.
+
+We work with homeowners, builders, architects, designers, and trades to plan technology requirements, infrastructure, integration, and long-term system architecture before those decisions become expensive to change. :contentReference[oaicite:1]{index=1}
