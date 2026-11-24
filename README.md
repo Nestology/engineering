@@ -1,22 +1,28 @@
 # Nestology
 
-Nestology is an engineering-first residential systems integrator in Central Pennsylvania. We design and install reliable home technology that stays predictable day after day - from whole-home networks and Wi-Fi to lighting, media rooms, and privacy-first security. Our approach focuses on clean infrastructure, local control, and segmented home networks to reduce digital risk at home. Systems are designed to function without mandatory cloud dependencies and maintain stable behavior during outages or vendor downtime. 
-Designed and installed by licensed experts
-CEDIA-certified, 
-Lutron Pro, 
-HIPAA-compliant, 
-cybersecurity-trained.
-HIC #PA196832
+Nestology is a technology integrator for homes and businesses in Central Pennsylvania, with an engineering-first approach. We design and install systems that stay predictable day after day: networks and Wi-Fi, lighting and shades, audio and home theaters, cameras, access control and privacy-first security.
 
-## Focus Areas
+Our standard is commercial-grade, for everyone: clean infrastructure, local control and segmented networks. Systems run without mandatory cloud services and keep working during internet outages or vendor downtime.
+
+- PA Home Improvement Contractor license HIC #PA196832
+- Trains with CEDIA · Lutron
+- Cybersecurity-trained engineers (CompTIA Security+)
+
+## What's here
+
+- **sample automations/**: free Home Assistant automations we use in real homes (shades, good night, garage security, irrigation by weather and more). Take them, adapt them.
+- Engineering notes: why smart homes fail, local vs cloud, stable network design, why Wi-Fi alone is not enough.
+
+## Focus areas
 
 - Smart home architecture
-- Network design & segmentation
+- Network design and segmentation
 - Home Assistant systems
 - Local-first automation
-- System reliability & failure analysis
+- System reliability and failure analysis
 
+## Talk to an engineer
 
-## Website
+Free 15–20 minute consultation, by video or phone: https://www.nestology.pro/free-consultation/
 
-https://www.nestology.pro
+Website: https://www.nestology.pro
